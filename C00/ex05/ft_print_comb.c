@@ -6,7 +6,7 @@
 /*   By: itiganas <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 15:38:38 by itiganas          #+#    #+#             */
-/*   Updated: 2022/06/14 17:08:16 by itiganas         ###   ########.fr       */
+/*   Updated: 2022/07/01 09:11:06 by itiganas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,11 @@ void	ft_print(int a, int b, int c)
 	ft_putchar(a);
 	ft_putchar(b);
 	ft_putchar(c);
-	ft_putchar(',');
-	ft_putchar(' ');
+	if (!(a == '7' && b == '8' && c == '9'))
+	{
+		ft_putchar(',');
+		ft_putchar(' ');
+	}
 }
 
 void	ft_print_comb(void)
@@ -50,7 +53,7 @@ void	ft_print_comb(void)
 	}
 }
 
-/*int main(int argc, const char *argv[])
+/*int main(void)
 {
 	ft_print_comb();
 	return 0;
